@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <!-- <link rel="stylesheet" href="dee.css"> -->
+    </head>
+    <body>
+        <!-- <img src="Capture.PNG" id="demo" alt=""> -->
+         
+         <div class="container w-75 pt-5 ">
+        <label for=""> Name</label>
+        <input  id="nameInp" class="form-control" type="text">
+        <label for=""> Price</label>
+        <input id="priceInp" class="form-control" type="text">
+        <label for=""> Category</label>
+        <input id="categoryInp" class="form-control" type="text">
+        <textarea class="form-control mt-3 "  name="" id="testInp" cols="30" rows="10"></textarea>
+
+        <button  id="cc" class="btn btn-info mt-3" onclick="funsend()">Add product</button>
+        <button id="bb" class="btn btn-info mt-3 " style="display:none ;" onclick="update()"> Update product</button>
+         <!-- <button onclick="funsend()">senddddddd</button> --> 
+
+         
+    </div>
+
+    <div class="container w-75">
+
+        <table class="table" id="">
+            <thead>
+            
+                <tr>
+                    <td>Index</td>
+                    <td>Name</td>
+                    <td>Prica</td>
+                    <td>CAtegory</td>
+                    <td>Description</td>
+                    <td>Update</td>
+                    <td>Delete</td>
+                </tr>
+                
+           
+            </thead>
+
+            <input  onkeyup="search(this.value)" type=""  placeholder="search ..." class="form-control mt-4 mb-4">
+
+            <tbody id="demo">
+
+                
+               
+            </tbody>
+
+        </table>
+
+
+
+
+    </div>  
+
+
+   
+
+
+        <script src="rev.js"></script>
+       
+    </body>
+</html>
